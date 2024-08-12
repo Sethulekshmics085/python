@@ -1,0 +1,23 @@
+import math
+name=input("Enter your name:")
+print("Enter mark expectations")
+s1=0
+s2=0
+s3=0
+s1=int(input("Enter expected mark s1:"))
+s2=int(input("Enter expected mark in s2:"))
+s3=int(input("Enter expected mark in s3:"))
+sum=0
+n=3
+sum=(s1+s2+s3)
+mean=sum/n
+dev1=mean-s1
+dev2=mean-s2
+dev3=mean-s3
+devs1=dev1*dev1
+devs2=dev2*dev2
+devs3=dev3*dev3
+std=(devs1+devs2+devs3)/3
+stnd=math.sqrt(std)
+print("std dev of",name,"is:")
+print(stnd)
